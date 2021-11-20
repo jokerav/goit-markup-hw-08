@@ -101,6 +101,7 @@
 //     color: var(--accent);
 //   }
 // }
+
 .mobile-menu {
   position: fixed;
   z-index: 3;
@@ -221,4 +222,102 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+// Меню в планшете и телефоне
+.header-menu {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.nav-bar {
+  display: flex;
+}
+.menu-links {
+  display: flex;
+}
+/* внешний отступ всем кроме последнего */
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.menu-link {
+  color: var(--secondary-text-color);
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+  position: relative;
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+.contacts {
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.contacts-item {
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (min-width: 768) and (max-width: 1199) {
+    display: block;
+    margin-bottom: 10px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+  &:focus,
+  &:hover {
+    color: var(--accent);
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.14;
+    }
+  }
+}
+.contact-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+  .contacts-item:hover &,
+  .contacts-item:focus &,
+  .contact-link:hover &,
+  .contact-link:focus & {
+    fill: var(--accent);
+  }
 }

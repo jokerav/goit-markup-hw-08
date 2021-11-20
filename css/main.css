@@ -88,7 +88,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -136,10 +135,17 @@ h5 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19em;
+    margin-right: 93px;
   }
 }
 
@@ -589,6 +595,127 @@ h5 {
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.header-menu {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.menu-links {
+  display: flex;
+}
+
+/* внешний отступ всем кроме последнего */
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-link {
+  color: var(--secondary-text-color);
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+  position: relative;
+}
+
+.menu-link:hover, .menu-link:focus {
+  color: var(--accent);
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768) and (max-width: 1199) {
+  .contacts-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.contact-link:focus, .contact-link:hover {
+  color: var(--accent);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-link:focus, .contact-link:hover {
+    font-size: 16px;
+    line-height: 1.14;
+  }
+}
+
+.contact-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.contacts-item:hover .contact-icon,
+.contacts-item:focus .contact-icon,
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
+  fill: var(--accent);
 }
 
 /* Секция герой */
