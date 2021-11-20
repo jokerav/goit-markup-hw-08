@@ -292,11 +292,6 @@ h5 {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.modal-close:hover, .modal-close:focus {
-  transition: var(--transition-duration) var(--timing-function);
-  fill: currentColor;
-}
-
 .modal-close-icon {
   transition: fill var(--transition-duration) var(--timing-function);
 }
@@ -516,8 +511,13 @@ h5 {
   outline: none;
 }
 
-.close-menu:hover, .close-menu:focus {
-  transition: var(--transition-duration) var(--timing-function);
+.close-menu:focus .menu-icon, .close-menu:hover .menu-icon {
+  outline: none;
+  fill: currentColor;
+}
+
+.menu-icon:hover, .menu-icon:focus {
+  outline: none;
   fill: currentColor;
 }
 

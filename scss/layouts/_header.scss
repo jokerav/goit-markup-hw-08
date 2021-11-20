@@ -146,6 +146,20 @@
   right: 15px;
   color: var(--accent);
   outline: none;
+  &:focus,
+  &:hover {
+    .menu-icon {
+      outline: none;
+      fill: currentColor;
+    }
+  }
+}
+.menu-icon {
+  &:hover,
+  &:focus {
+    outline: none;
+    fill: currentColor;
+  }
 }
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 32px;
