@@ -466,6 +466,9 @@ h5 {
   left: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -473,6 +476,7 @@ h5 {
   background-color: var(--background-primary);
   padding-left: 40px;
   padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .mobile-menu.is-open {
@@ -530,6 +534,10 @@ h5 {
   text-decoration: none;
 }
 
+.current {
+  color: var(--accent);
+}
+
 .mobile-menu-tel {
   color: var(--accent);
   font-weight: 500;
@@ -537,6 +545,8 @@ h5 {
   line-height: 1.176;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
+  margin-bottom: 32px;
 }
 
 .mobile-menu-mail {
@@ -546,6 +556,8 @@ h5 {
   line-height: 1.166;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
+  margin-bottom: 64px;
 }
 
 .mobile-socials {
@@ -568,6 +580,15 @@ h5 {
   height: 100%;
   display: block;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social-link {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* Секция герой */
