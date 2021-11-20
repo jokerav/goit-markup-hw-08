@@ -1,0 +1,36 @@
+.feachers-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.feachers-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.feacher-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: var(--accent-secondary);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.feachers-title {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feachers-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
