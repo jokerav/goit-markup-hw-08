@@ -1,0 +1,9 @@
+@mixin close-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-duration) var(--timing-function);
+}

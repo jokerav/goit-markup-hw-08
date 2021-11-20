@@ -88,7 +88,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 3px solid red;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -277,18 +277,19 @@ h5 {
 
 .modal-close {
   position: absolute;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-duration) var(--timing-function);
   top: 14px;
   right: 14px;
   width: 30px;
   height: 30px;
   color: var(--accent);
-  background-color: var(--background-primary);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color var(--transition-duration) var(--timing-function);
 }
 
 .modal-close-icon {
@@ -453,6 +454,56 @@ h5 {
 /* контакты */
 /* .contacts {
 } */
+.mobile-menu {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all var(--transition-duration) var(--timing-function);
+  background-color: var(--background-primary);
+  padding-left: 40px;
+  padding-top: 48px;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.mobile-menu-btn {
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px;
+  line-height: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.close-menu {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-duration) var(--timing-function);
+  top: 10px;
+  right: 15px;
+}
+
 /* Секция герой */
 .hero {
   background-color: var(--background-hero);

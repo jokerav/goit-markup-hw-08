@@ -19,11 +19,36 @@
 </head>
 <header class="header">
     <div class="container">
-        <a href="./index.html" class="logo black">Web<span>Studio</span></a>
+
+        <div class="header-menu">
+            <a href="./index.html" class="logo black">Web<span>Studio</span></a>
+            <button class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-icon" width="24px" height="16px">
+                    <use href="./images/icons/symbol-defs.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <button type="button" class="close-btn close-menu" data-menu-close>
+                    <svg class="modal-close-icon" width="18px" height="18px">
+                        <use href="./images/icons/symbol-defs.svg#icon-close-modal"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item">Студия</li>
+                    <li class="mobile-menu-item">Портфолио</li>
+                    <li class="mobile-menu-item">Контакты</li>
+                </ul>
+            </div>
+
+
+
+        </div>
 
     </div>
 
 </header>
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
 <body>
 

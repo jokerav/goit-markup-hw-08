@@ -13,20 +13,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .modal-close {
-  position: absolute;
+  @include close-btn;
   top: 14px;
   right: 14px;
   width: 30px;
   height: 30px;
   color: var(--accent);
-  background-color: var(--background-primary);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color var(--transition-duration) var(--timing-function);
 }
 .modal-close-icon {
   transition: fill var(--transition-duration) var(--timing-function);
