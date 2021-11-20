@@ -135,11 +135,56 @@
     display: none;
   }
 }
-
 .close-menu {
   @include close-btn;
   top: 10px;
   right: 15px;
+  color: var(--accent);
+  outline: none;
 }
-.mobile-menu-icon {
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.mobile-menu-tel {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.mobile-menu-mail {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.mobile-socials {
+  display: flex;
+}
+.mobile-socials-item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 21px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: -10px;
+      top: 0;
+      height: 100%;
+      display: block;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
 }

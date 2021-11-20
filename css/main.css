@@ -283,13 +283,18 @@ h5 {
   align-items: center;
   justify-content: center;
   transition: color var(--transition-duration) var(--timing-function);
+  border-radius: 50%;
   top: 14px;
   right: 14px;
   width: 30px;
   height: 30px;
   color: var(--accent);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+}
+
+.modal-close:hover, .modal-close:focus {
+  transition: var(--transition-duration) var(--timing-function);
+  fill: currentColor;
 }
 
 .modal-close-icon {
@@ -500,8 +505,69 @@ h5 {
   align-items: center;
   justify-content: center;
   transition: color var(--transition-duration) var(--timing-function);
+  border-radius: 50%;
   top: 10px;
   right: 15px;
+  color: var(--accent);
+  outline: none;
+}
+
+.close-menu:hover, .close-menu:focus {
+  transition: var(--transition-duration) var(--timing-function);
+  fill: currentColor;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.mobile-menu-tel {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.mobile-menu-mail {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.mobile-socials {
+  display: flex;
+}
+
+.mobile-socials-item {
+  position: relative;
+}
+
+.mobile-socials-item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.mobile-socials-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 0;
+  height: 100%;
+  display: block;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 /* Секция герой */

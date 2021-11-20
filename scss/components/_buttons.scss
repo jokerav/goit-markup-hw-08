@@ -6,4 +6,10 @@
   align-items: center;
   justify-content: center;
   transition: color var(--transition-duration) var(--timing-function);
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    transition: var(--transition-duration) var(--timing-function);
+    fill: currentColor;
+  }
 }
