@@ -723,25 +723,14 @@ h5 {
   background-color: var(--background-hero);
   padding-top: 118px;
   padding-bottom: 118px;
-  padding-left: 60px;
-  padding-right: 60px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-left: 204px;
-    padding-right: 204px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 280px;
-    padding-left: 452px;
-    padding-right: 452px;
   }
 }
 
@@ -753,27 +742,27 @@ h5 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero480@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero480@1x.jpg);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
     max-width: 960px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero480@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero480@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero768@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero768@1x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
     max-width: 960px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero768@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero768@2x.jpg);
   }
 }
 
@@ -781,7 +770,7 @@ h5 {
   .overlay {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero1200@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero1200@1x.jpg);
   }
 }
 
@@ -789,14 +778,13 @@ h5 {
   .overlay {
     max-width: 3200px;
     height: 1200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero1200@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero1200@2x.jpg);
   }
 }
 
 .hero-container {
   display: block;
   width: 360px;
-  margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -815,6 +803,7 @@ h5 {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
