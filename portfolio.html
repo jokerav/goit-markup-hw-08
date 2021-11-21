@@ -16,37 +16,69 @@
 
 <body>
   <header class="header">
-    <div class="container header-container">
-      <!--логотип фирмы-->
-      <a href="./index.html" class="logo black header-logo">Web<span>Studio</span></a>
-      <nav class="nav-bar">
-        <!--страницы в шапке-->
-        <ul class="menu-links list">
-          <li class="menu-item"><a class="menu-link header-link" href="./index.html">Студия</a></li>
-          <li class="menu-item"><a class="menu-link header-link current" href="#">Портфолио</a></li>
-          <li class="menu-item"><a class="menu-link header-link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <!--контакты в шапке-->
-      <ul class="contacts list">
-        <li class="contacts-item">
-          <a class="contact-link header-link" href="mailto:info@devstudio.com">
-            <svg class="contact-icon" width="16" height="12">
-              <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+    <div class="container">
+
+      <div class="header-menu">
+        <a href="./index.html" class="logo black">Web<span>Studio</span></a>
+        <button class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-icon" width="24px" height="16px">
+            <use href="./images/icons/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        <div class="menu">
+          <nav class="nav-bar">
+            <ul class="menu-links list">
+              <li class="menu-item"><a class="menu-link header-link" href="./index.html">Студия</a></li>
+              <li class="menu-item"><a class="menu-link header-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="menu-item"><a class="menu-link header-link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts list">
+            <li class="contacts-item">
+              <a class="contact-link" href="mailto:info@devstudio.com">
+                <svg class="contact-icon" width="16" height="12">
+                  <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="contacts-item">
+              <a class="contact-link header-link" href="tel:+380961111111">
+                <svg class="contact-icon" width="10" height="16">
+                  <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 000 00 00
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+          <button type="button" class="close-btn close-menu" data-menu-close>
+            <svg class="menu-icon" width="18px" height="18px">
+              <use href="./images/icons/symbol-defs.svg#icon-close-modal"></use>
             </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="contacts-item">
-          <a class="contact-link header-link" href="tel:+380961111111">
-            <svg class="contact-icon" width="10" height="16">
-              <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 000 00 00
-          </a>
-        </li>
-      </ul>
+          </button>
+          <ul class="menu-list list">
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="./index.html"> Студия</a></li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="./portfolio.html"> Портфолио</a>
+            </li>
+            <li class="mobile-menu-item"><a class="mobile-menu-link" href="#"> Контакты</a></li>
+          </ul>
+          <div class="mobile-memu-bottom">
+            <a class="mobile-menu-tel" href="tel:+380961111111">+380961111111</a>
+            <a class="mobile-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="mobile-socials list">
+              <li class="mobile-socials-item"><a href="#" class="mobile-social-link">Instagram</a></li>
+              <li class="mobile-socials-item"><a href="#" class="mobile-social-link">Twitter</a></li>
+              <li class="mobile-socials-item"><a href="#" class="mobile-social-link">Facebook</a></li>
+              <li class="mobile-socials-item"><a href="#" class="mobile-social-link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     </div>
+
   </header>
   <!--контейнер для основного содержимого-->
 
@@ -293,6 +325,7 @@
     </div>
 
   </footer>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

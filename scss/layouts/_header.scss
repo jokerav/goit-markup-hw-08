@@ -173,6 +173,12 @@
   line-height: 1.175;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color var(--transition-duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+    outline: none;
+  }
 }
 .current {
   color: var(--accent);

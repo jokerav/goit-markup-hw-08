@@ -538,6 +538,12 @@ h5 {
   line-height: 1.175;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color var(--transition-duration) var(--timing-function);
+}
+
+.mobile-menu-link:hover, .mobile-menu-link:focus {
+  color: var(--accent);
+  outline: none;
 }
 
 .current {
