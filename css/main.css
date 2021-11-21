@@ -170,8 +170,15 @@ h5 {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .social-list {
@@ -845,14 +852,33 @@ h5 {
 .feachers-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .feachers-list {
+    margin-left: -30px;
+  }
 }
 
 .feachers-item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  flex-basis: calc(100% / 1 - 30px);
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .feachers-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feachers-item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .feacher-bg {
@@ -873,6 +899,13 @@ h5 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feachers-title {
+    text-align: left;
+  }
 }
 
 .feachers-text {
