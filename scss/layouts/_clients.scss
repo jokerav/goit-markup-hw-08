@@ -1,18 +1,63 @@
 /* ---------------Секция клиенты--------------- */
+// .clients-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-right: -30px;
+// }
+// .client-item {
+//   display: flex;
+//   flex-basis: calc(100% / 6 - 30px);
+//   margin-right: 30px;
+//   height: 92px;
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+// .client-link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   color: var(--social-items-our-client);
+//   background-color: var(--background-primary);
+//   border: 1px solid var(--social-items-our-client);
+//   border-radius: 4px;
+//   transition-property: border, color;
+//   transition-duration: var(--transition-duration);
+//   transition-timing-function: var(--timing-function);
+//   &:hover,
+//   &:focus {
+//     border: 1px solid var(--accent);
+//     color: var(--accent);
+//   }
+// }
+// .client-icon {
+//   fill: currentColor;
+//   transition-property: fill;
+//   transition-duration: var(--transition-duration);
+//   transition-timing-function: var(--timing-function);
+// }
+
 .clients-list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 .client-item {
   display: flex;
-  flex-basis: calc(100% / 6 - 30px);
+  flex-basis: calc(100% / 2 - 30px);
   margin-right: 30px;
+  margin-bottom: 30px;
   height: 92px;
-  &:last-child {
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  &:nth-child(2n) {
     margin-right: 0;
   }
 }
+
 .client-link {
   display: flex;
   justify-content: center;
