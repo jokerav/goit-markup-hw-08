@@ -95,14 +95,14 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./images/hero/Hero768@1x.jpg);
+      url(../images/hero/Hero768@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       max-width: 960px;
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/hero/Hero768@2x.jpg);
+        url(../images/hero/Hero768@2x.jpg);
     }
   }
   // ПК
@@ -110,7 +110,7 @@
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./images/hero/Hero1200@1x.jpg);
+      url(../images/hero/Hero1200@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -118,7 +118,7 @@
       max-width: 3200px;
       height: 1200px;
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/hero/Hero1200@2x.jpg);
+        url(../images/hero/Hero1200@2x.jpg);
     }
   }
 }
