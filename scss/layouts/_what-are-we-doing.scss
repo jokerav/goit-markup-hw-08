@@ -1,6 +1,9 @@
 /* ----------секция чем занимаемся---------- */
 .what-are-we-doing {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .dooing-list {
   display: flex;

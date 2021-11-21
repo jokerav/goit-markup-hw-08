@@ -920,6 +920,12 @@ h5 {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .what-are-we-doing {
+    display: none;
+  }
+}
+
 .dooing-list {
   display: flex;
   flex-wrap: wrap;
