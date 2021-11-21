@@ -8,3 +8,25 @@
   transition: color var(--transition-duration) var(--timing-function);
   border-radius: 50%;
 }
+@mixin btn {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Roboto';
+  background-color: var(--accent);
+  color: var(--background-primary);
+  font-size: 16px;
+  line-height: 1.875;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+  transition-property: background-color, box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+  &:focus,
+  &:hover {
+    background-color: var(--hero-btn-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
