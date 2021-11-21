@@ -1209,12 +1209,35 @@ h5 {
   height: 92px;
 }
 
-.client-item:nth-last-child(-n + 2) {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .client-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .client-item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
-.client-item:nth-child(2n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client-item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  .client-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  .client-item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-bottom: 0;
+  }
+  .client-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .client-link {
