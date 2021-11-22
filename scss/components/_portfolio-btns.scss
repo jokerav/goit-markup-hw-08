@@ -2,9 +2,33 @@
 .portfolio-btns {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 34px;
+  }
 }
+.btn-item {
+  margin-right: 8px;
+  margin-bottom: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media screen and (max-width: 767px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &:nth-last-child(n + 2) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 .portfolio-btn {
   font-family: 'Roboto';
   background-color: var(--accent-secondary);
@@ -19,6 +43,11 @@
   transition-property: background-color, color, box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
+  // @media screen and (max-width: 767px) {
+  //   &:nth-last-child(n + 2) {
+  //     margin-bottom: 15px;
+  //   }
+  // }
   &:hover,
   &:focus {
     background-color: var(--accent);
@@ -31,6 +60,10 @@
   background-color: var(--accent);
   color: var(--background-primary);
 }
-.btn-item:not(:last-child) {
-  margin-right: 8px;
-}
+
+// .btn-item:not(:last-child) {
+//   margin-right: 8px;
+// }
+// .btn-item:nth-child(3n){
+
+// }
