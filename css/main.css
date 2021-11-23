@@ -152,6 +152,21 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
+  .mobile-logo {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .header-logo {
     margin-right: 88px;
   }
@@ -522,6 +537,10 @@ h5 {
 /* контакты */
 /* .contacts {
 } */
+.header-container {
+  border-bottom: 1px solid var(--header-bottom-border);
+}
+
 .mobile-menu {
   position: fixed;
   z-index: 3;
@@ -665,12 +684,8 @@ h5 {
   text-decoration: none;
 }
 
-.header-menu {
-  display: flex;
-}
-
 @media screen and (max-width: 767px) {
-  .header-menu {
+  .common-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -687,12 +702,13 @@ h5 {
   .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
   }
 }
 
 .nav-bar {
   display: flex;
+  align-items: center;
 }
 
 .menu-links {
@@ -702,6 +718,12 @@ h5 {
 /* внешний отступ всем кроме последнего */
 .menu-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .menu-link {
@@ -714,10 +736,27 @@ h5 {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
   position: relative;
+  cursor: pointer;
 }
 
 .menu-link:hover, .menu-link:focus {
   color: var(--accent);
+}
+
+.current {
+  color: var(--accent);
+}
+
+.current::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent);
+  border-radius: 2px;
 }
 
 .contacts {
@@ -727,22 +766,22 @@ h5 {
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-item {
+    display: block;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts-item:not(:last-child) {
     margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 768) and (max-width: 1199) {
-  .contacts-item {
-    display: block;
-    margin-bottom: 10px;
-  }
-  .contacts-item:not(:last-child) {
-    margin-bottom: 10px;
   }
 }
 
