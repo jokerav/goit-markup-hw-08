@@ -144,32 +144,25 @@
   padding-bottom: 60px;
 }
 .footer-container {
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   align-items: baseline;
-  //   flex-wrap: wrap;
-  // }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
-  }
-}
-.footer-adress-social-conteiner {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
     justify-content: space-around;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 }
+
 .footer-logo-adress {
   margin-bottom: 60px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-bottom: 0;
+  }
 }
 
 .footer-logo {
@@ -206,9 +199,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  // @media screen and (min-width: 768px) {
-  //   margin-left: auto;
-  // }
 }
 .join {
   color: var(--background-primary);
@@ -219,6 +209,9 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer-social-item {
   width: 44px;
@@ -246,11 +239,12 @@
   fill: var(--background-primary);
 }
 
-// .subscribe {
-//   @media screen and (min-width: 1200px) {
-//     margin-left: auto;
-//   }
-// }
+.subscribe {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .subscribe-form {
   width: 100%;
@@ -260,6 +254,11 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .subscribe-input {
   width: 100%;
@@ -274,18 +273,8 @@
   @media screen and (min-width: 768px) {
     width: 450px;
   }
-  // margin-right: 12px;
-}
-.subscribe-btn {
-  @include btn;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.subscribe-text {
-  margin-right: 12px;
-}
 .subscribe-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -299,4 +288,19 @@
   }
 
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 357px;
+    margin-right: 12px;
+  }
+}
+.subscribe-btn {
+  @include btn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-text {
+  margin-right: 12px;
 }
