@@ -318,7 +318,7 @@ h5 {
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   top: 50%;
   left: 50%;
   padding-top: 40px;
@@ -329,6 +329,12 @@ h5 {
   background-color: var(--background-primary);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 527px;
+  }
 }
 
 .modal-close {
@@ -366,10 +372,16 @@ h5 {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-header {
+    line-height: 1.15;
+  }
 }
 
 .input-container {

@@ -597,6 +597,60 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="18px" height="18px">
+                    <use href="./images/icons/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+            <form class="modal-form">
+                <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
+                <Label class="modal-input-label">Имя
+                    <span class="input-container">
+                        <input class="modal-input" type="text" name="user-name" minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                            title="Имя должно содержать минимум 2 символа кириллицы или латиницы" required>
+                        <svg class="modal-input-icon" width="18px" height="18px">
+                            <use href="./images/icons/symbol-defs.svg#icon-person-black"></use>
+                        </svg>
+                    </span>
+                </Label>
+
+                <Label class="modal-input-label">Телефон
+                    <span class="input-container">
+                        <input class="modal-input" type="tel" name="user-phone" title="097-123-45-67"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                        <svg class="modal-input-icon" width="18px" height="18px">
+                            <use href="./images/icons/symbol-defs.svg#icon-phone-black"></use>
+                        </svg>
+                    </span>
+                </Label>
+
+                <Label class="modal-input-label">Почта
+                    <span class="input-container">
+                        <input class="modal-input" type="email" name="user-email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <svg class="modal-input-icon" width="18px" height="18px">
+                            <use href="./images/icons/symbol-defs.svg#icon-email-black"></use>
+                        </svg>
+                    </span>
+                </Label>
+                <div class="comment-container">
+                    <Label class="modal-input-label comment-label">Комментарий<textarea class="input-mix modal-comment"
+                            placeholder="Введите текст" name="comment"></textarea></Label>
+                </div>
+                <input class="form-checkbox visually-hidden" type="checkbox" id="accept-policy">
+                <Label class="checkbox-label" for="accept-policy">
+                    Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a>
+                </Label>
+
+
+                <button class="form-btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
