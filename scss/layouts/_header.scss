@@ -102,8 +102,10 @@
 //   }
 // }
 
-.header-container {
-  border-bottom: 1px solid var(--header-bottom-border);
+.header {
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid var(--header-bottom-border);
+  }
 }
 
 .mobile-menu {
@@ -337,12 +339,27 @@
   &:focus,
   &:hover {
     color: var(--accent);
-    @media screen and (min-width: 1200px) {
-      font-size: 16px;
-      line-height: 1.14;
-    }
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.14;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
+.mail-link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 21px;
+    margin-bottom: 10px;
+  }
+}
+
+.phone-link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 21px;
+  }
+}
+
 .contact-icon {
   fill: var(--primary-text-color);
   margin-right: 10px;

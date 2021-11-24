@@ -139,7 +139,6 @@ h5 {
   .logo {
     font-size: 26px;
     line-height: 1.19em;
-    margin-right: 93px;
   }
 }
 
@@ -166,13 +165,29 @@ h5 {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header-logo {
-    margin-right: 88px;
+@media screen and (max-width: 768px) {
+  .mobile-logo {
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
+  .header-logo {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 88px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .header-logo {
     margin-right: 93px;
   }
@@ -537,8 +552,10 @@ h5 {
 /* контакты */
 /* .contacts {
 } */
-.header-container {
-  border-bottom: 1px solid var(--header-bottom-border);
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid var(--header-bottom-border);
+  }
 }
 
 .mobile-menu {
@@ -804,9 +821,24 @@ h5 {
 }
 
 @media screen and (min-width: 1200px) {
-  .contact-link:focus, .contact-link:hover {
+  .contact-link {
     font-size: 16px;
     line-height: 1.14;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mail-link {
+    padding-top: 21px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .phone-link {
+    padding-bottom: 21px;
   }
 }
 
@@ -837,7 +869,7 @@ h5 {
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
   }
 }
 
@@ -1114,6 +1146,8 @@ h5 {
 .team-text-container {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .team-item-title {
@@ -1365,27 +1399,15 @@ h5 {
   height: 92px;
 }
 
-@media screen and (max-width: 767px) {
-  .client-item:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client-item {
     flex-basis: calc(100% / 3 - 30px);
-  }
-  .client-item:nth-child(3n) {
-    margin-right: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .client-item {
     flex-basis: calc(100% / 6 - 30px);
-  }
-  .client-item:last-child {
-    margin-right: 0;
   }
 }
 
