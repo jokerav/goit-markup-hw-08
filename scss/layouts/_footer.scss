@@ -150,8 +150,8 @@
     justify-content: space-around;
     align-items: baseline;
     @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-      justify-content: space-between;
+      // flex-wrap: nowrap;
+      // justify-content: space-between;
     }
   }
 }
@@ -178,6 +178,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    padding-right: 70px;
+  }
 }
 .footer-item:not(:last-child) {
   margin-bottom: 8px;
@@ -198,6 +201,9 @@
 .footer-social {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 93px;
   }
 }
 .join {

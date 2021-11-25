@@ -36,19 +36,18 @@
 // }
 
 .feachers-list {
-  display: flex;
-  flex-wrap: wrap;
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     margin-right: -30px;
   }
 }
 .feachers-item {
-  display: block;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  // display: block;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
   }

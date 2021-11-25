@@ -71,8 +71,8 @@
   }
 }
 .overlay {
-  max-width: 480px;
-  height: 400px;
+  // max-width: 480px;
+  // height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -89,7 +89,7 @@
       url(../images/hero/Hero480@2x.jpg);
   }
   // Планшет
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/Hero768@1x.jpg);
@@ -102,26 +102,24 @@
         url(../images/hero/Hero768@2x.jpg);
     }
   }
-  // ПК
-  @media screen and (min-width: 1200px) {
+  // Пк
+  @media screen and (min-width: 769px) {
     max-width: 1600px;
-    height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/Hero1200@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      max-width: 3200px;
-      height: 1200px;
+      max-width: 960px;
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero/Hero1200@2x.jpg);
     }
   }
 }
+
 .hero-container {
-  display: block;
-  width: 360px;
+  // width: 360px;
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 1200px) {
