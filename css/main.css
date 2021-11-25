@@ -348,7 +348,7 @@ h5 {
 
 .modal {
   position: absolute;
-  width: 450px;
+  min-width: 320px;
   top: 50%;
   left: 50%;
   padding-top: 40px;
@@ -1435,43 +1435,28 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .exemples-position {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: -30px;
     margin-right: -30px;
   }
 }
 
 .exemples-item-position {
-  flex-basis: calc(100% / 1 - 30px);
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .exemples-item-position:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .exemples-item-position {
-    display: flex;
-    flex-wrap: wrap;
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
-  }
-  .exemples-item-position:nth-child(2n) {
-    margin-right: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .exemples-item-position {
-    display: flex;
-    flex-wrap: wrap;
     flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
-  }
-  .exemples-item-position:nth-child(3n) {
-    margin-right: 0;
   }
 }
 
@@ -1509,6 +1494,7 @@ h5 {
   align-items: center;
   padding-left: 24px;
   padding-right: 24px;
+  overflow: auto;
 }
 
 .exemple-overlay-box:hover .exemple-overlay,
