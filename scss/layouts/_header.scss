@@ -103,9 +103,7 @@
 // }
 
 .header {
-  @media screen and (min-width: 768px) {
-    border-bottom: 1px solid var(--header-bottom-border);
-  }
+  border-bottom: 1px solid var(--header-bottom-border);
 }
 
 .mobile-menu {

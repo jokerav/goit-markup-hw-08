@@ -558,10 +558,8 @@ h5 {
 /* контакты */
 /* .contacts {
 } */
-@media screen and (min-width: 768px) {
-  .header {
-    border-bottom: 1px solid var(--header-bottom-border);
-  }
+.header {
+  border-bottom: 1px solid var(--header-bottom-border);
 }
 
 .mobile-menu {
