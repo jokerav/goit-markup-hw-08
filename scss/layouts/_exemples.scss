@@ -85,13 +85,23 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
 }
-
+.grow {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
+}
 .exemples-text-container {
   padding: 20px 24px;
   border-bottom: 1px solid var(--exemples-item-border);
   border-right: 1px solid var(--exemples-item-border);
   border-left: 1px solid var(--exemples-item-border);
   text-decoration: none;
+  flex-grow: 2;
+}
+.grow {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 .exemples-title {
   color: var(--secondary-text-color);
