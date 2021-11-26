@@ -672,6 +672,7 @@ h5 {
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-socials-item {
