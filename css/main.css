@@ -598,12 +598,19 @@ h5 {
   background-color: transparent;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu-btn {
     display: none;
   }
+}
+
+.mobile-menu-btn:hover .mobile-menu-icon,
+.mobile-menu-btn:focus .mobile-menu-icon {
+  fill: var(--accent);
+  outline: none;
 }
 
 .close-menu {
@@ -1185,12 +1192,24 @@ h5 {
   .footer-adress-social-container {
     display: flex;
     align-items: baseline;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adress-social-container {
+    margin-bottom: 0;
   }
 }
 
 .footer-logo-adress {
-  margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-logo-adress {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {

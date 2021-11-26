@@ -143,8 +143,14 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  outline: none;
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  &:hover .mobile-menu-icon,
+  &:focus .mobile-menu-icon {
+    fill: var(--accent);
+    outline: none;
   }
 }
 .close-menu {
