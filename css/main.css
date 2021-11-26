@@ -924,6 +924,7 @@ h5 {
 }
 
 .hero-container {
+  width: 360px;
   margin-right: auto;
   margin-left: auto;
 }
