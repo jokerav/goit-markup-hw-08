@@ -1562,12 +1562,12 @@ h5 {
   border-right: 1px solid var(--exemples-item-border);
   border-left: 1px solid var(--exemples-item-border);
   text-decoration: none;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .grow {
-    flex-grow: 1;
+    flex-grow: 0;
   }
 }
 

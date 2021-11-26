@@ -96,11 +96,11 @@
   border-right: 1px solid var(--exemples-item-border);
   border-left: 1px solid var(--exemples-item-border);
   text-decoration: none;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 .grow {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-grow: 1;
+    flex-grow: 0;
   }
 }
 .exemples-title {
