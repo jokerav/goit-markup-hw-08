@@ -1174,15 +1174,36 @@ h5 {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-adress-social-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer-logo-adress {
   margin-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo-adress {
+    margin-right: 165px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-logo-adress {
     text-align: start;
     margin-bottom: 0;
+    margin-right: 70px;
   }
 }
 
@@ -1200,12 +1221,6 @@ h5 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-adress {
-    padding-right: 70px;
-  }
 }
 
 .footer-item:not(:last-child) {
@@ -1232,12 +1247,6 @@ h5 {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-social {
-    padding-right: 93px;
-  }
-}
-
 .join {
   color: var(--background-primary);
   font-weight: 700;
@@ -1259,6 +1268,10 @@ h5 {
   width: 44px;
   height: 44px;
   margin-right: 10px;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-social-link {
@@ -1309,7 +1322,6 @@ h5 {
 }
 
 .subscribe-input {
-  width: 100%;
   color: var(--background-hero);
   padding: 15px;
   display: flex;
@@ -1318,11 +1330,21 @@ h5 {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--background-hero);
+  margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    margin-bottom: 0;
+    width: 350px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -1333,20 +1355,11 @@ h5 {
   border-radius: 4px;
   color: inherit;
   transition-property: border var(--transition-duration) var(--timing-function);
-  margin-bottom: 20px;
 }
 
 .subscribe-input:focus {
   outline: none;
   border: 1px solid var(--accent);
-}
-
-@media screen and (min-width: 1200px) {
-  .subscribe-input {
-    margin-bottom: 0;
-    width: 357px;
-    margin-right: 12px;
-  }
 }
 
 .subscribe-btn {
