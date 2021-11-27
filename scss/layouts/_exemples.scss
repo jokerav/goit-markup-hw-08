@@ -84,6 +84,10 @@
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
 }
 .grow {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
